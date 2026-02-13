@@ -1,0 +1,13 @@
+{
+  "name": "forward-msg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "input": "^1.0.1",
+    "node-telegram-bot-api": "^0.67.0",
+    "telegram": "^2.26.22"
+  }
+}
