@@ -4,7 +4,15 @@ const env = require("./env");
 const { client } = require("./userClient");
 const { startForwarding, stopForwarding } = require("./forwarder");
 
-const bot = new TelegramBot(env.botToken, { polling: true });
+const bot = new TelegramBot(env.botToken, {
+  polling: {
+    interval: 300,
+    autoStart: true,
+    params: {
+      timeout: 10
+    }
+  }
+});
 
 const PAGE_SIZE = 8;
 
